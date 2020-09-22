@@ -27,7 +27,7 @@ Hello，欢迎你。这里是小狮子65记录自己学习JS高程（第四版�
  * **除此之外所有的其他类型转换为布尔类型结果都是true**
  */
 Boolean('')            // false
-Boolean(0)           /****/ false
+Boolean(0)           //false
 Boolean(+0)        // false
 Boolean(-0)         // false
 Boolean(NaN)     // false
