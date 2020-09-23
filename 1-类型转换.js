@@ -44,3 +44,23 @@ const arr = [
 ]
 
 console.log(arr)
+
+/**
+ * 有3个函数可以将非数值转换为数值：Number()、parseInt()和parseFloat()。
+ * 2.2、parseInt()函数更专注于字符串是否包含数值模式。
+ */
+const arr = [
+    parseInt(""), // NaN
+    parseInt("  asd"), // NaN
+    parseInt(" +123.45"), // 123
+    parseInt("02020"), // 2020, 解释为十进制
+    parseInt("0x16"), // 22，解释为十六进制整数
+    parseInt("0xf", 16), // 15
+    parseInt("f", 16), // 15
+    parseInt("2020", 8), // 1040
+    parseInt("10", 2), // 2
+    parseInt("10", 8), // 8
+    parseInt("10", 10), // 10
+    parseInt("10", 16) // 16
+]
+console.log(arr)
