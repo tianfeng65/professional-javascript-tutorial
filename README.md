@@ -111,10 +111,10 @@ const arr = [
 console.log(arr)
 ```
 
-不同的数值格式很容易混淆，因此parseInt()也接收第二个参数，用于指定底数（进制数）。如果知道要解析的值是十六进制，那么可以传入16作为第二个参数，以便正确解析。题外话，在我配置了Airbnb的Eslint规范后，我发现Airbnb强制ParseInt要传入第二个参数，也禁止使用ParseInt解析二进制、八进制、十六进制，进而在编码规范上规避JS的一些诡异特性：
+不同的数值格式很容易混淆，因此parseInt()也接收第二个参数，用于指定底数（进制数）。如果知道要解析的值是十六进制，那么可以传入16作为第二个参数，以便正确解析。：
 
 ```javascript
-const arr = [
+const arr2 = [
     parseInt("0xf", 16), // 15
     parseInt("f", 16), // 15
     parseInt("2020", 8), // 1040
@@ -123,8 +123,9 @@ const arr = [
     parseInt("10", 10), // 10
     parseInt("10", 16) // 16
 ]
-console.log(arr)
+console.log(arr2)
 ```
+题外话，在我配置了Airbnb的Eslint规范后，我发现Airbnb强制ParseInt要传入第二个参数，也禁止使用ParseInt解析二进制、八进制、十六进制，进而在编码规范上规避JS的一些诡异特性。
 
 ### 2.3、parseFloat()
 
