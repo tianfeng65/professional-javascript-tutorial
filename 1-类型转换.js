@@ -50,12 +50,14 @@ console.log(arr);
  * 2.2、parseInt()
  */
 const arr2 = [
+  /* eslint-disable */
   parseInt(''), // NaN
   parseInt('  asd'), // NaN
   parseInt(' +123.45'), // 123
   parseInt('02020'), // 2020, 解释为十进制
   parseInt('0x16'), // 22，解释为十六进制整数
   parseInt('0xf', 16), // 15
+  /* eslint-disable */
   0xf, // 15
   0o2020, // 1040
   0b10, // 2
@@ -78,3 +80,27 @@ const arr3 = [
   parseFloat('3.125e7'), // 31250000
 ];
 console.log(arr3);
+
+/**
+ * 3、其他类型 => 字符串类型
+ * 3.1、toString()
+ */
+const arr4 = [
+  11,
+  true,
+];
+arr4.forEach((item) => console.log(item.toString())); // "11", "true"
+const num = 10;
+console.log(num.toString()); // "10"
+console.log(num.toString(2)); // "1010"
+console.log(num.toString(8)); // "12"
+console.log(num.toString(10)); // "10"
+console.log(num.toString(16)); // "a"
+/**
+ * 3.2、String()
+ * 如果值有toString()方法，则调用该方法（不传参数）并返回结果；
+ * 如果值是null，返回"null"；
+ * 如果值是undefined，返回"undefined"。
+ */
+const arr5 = [10, true, null, undefined];
+arr5.forEach((item) => console.log(String(item)));// "10", "true", "null", "undefined"

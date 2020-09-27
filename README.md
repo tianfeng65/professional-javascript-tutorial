@@ -144,3 +144,34 @@ const arr3 = [
 console.log(arr3);
 ```
 
+## 3、其他类型 => 字符串类型
+
+### 3.1、toString: 
+  - 除了null和undefined，其他所有值都有toString()方法。这个方法唯一的用途就是返回当前值的字符串等价物。
+  - 在对数值调用这个方法时，toString()可以接收一个底数参数，即以什么底数来输出数值的字符串表示。默认情况下，toString()返回数值的十进制字符串表示。而通过传入参数，可以得到数值的二进制、八进制、十六进制，或者其他任何有效基数的字符串表示。
+
+```javascript
+const arr4 = [
+  11,
+  true,
+];
+arr4.forEach((item) => console.log(item.toString())); // "11", "true"
+const num = 10;
+console.log(num.toString()); // "10"
+console.log(num.toString(2)); // "1010"
+console.log(num.toString(8)); // "12"
+console.log(num.toString(10)); // "10"
+console.log(num.toString(16)); // "a"
+```
+
+### 3.2、String()。
+
+如果你不确定一个值是不是null或undefined，可以使用String()转型函数，它始终会返回表示相应类型值的字符串。String()函数遵循如下规则。
+  - 如果值有toString()方法，则调用该方法（不传参数）并返回结果；
+  - 如果值是null，返回"null"；
+  - 如果值是undefined，返回"undefined"。
+```javascript
+const arr5 = [10, true, null, undefined];
+arr5.forEach((item) => console.log(String(item)));// "10", "true", "null", "undefined"
+```
+  
