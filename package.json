@@ -1,0 +1,26 @@
+{
+  "name": "professional-javascript-tutorial",
+  "version": "1.0.0",
+  "description": "``` Hello，欢迎你。这里是小狮子65记录自己学习JS高程（第四版）的地方。",
+  "main": "1-类型转换.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:create": "eslint --init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tianfeng65/professional-javascript-tutorial.git"
+  },
+  "author": "xiaoshizi65",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tianfeng65/professional-javascript-tutorial/issues"
+  },
+  "homepage": "https://github.com/tianfeng65/professional-javascript-tutorial#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
